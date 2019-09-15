@@ -31,7 +31,8 @@ Vue.use(VueHtml5Editor, {
     eraser: 'fa fa-eraser',
     undo: 'fa-undo fa',
     'full-screen': 'fa fa-arrows-alt',
-    info: 'fa fa-info'
+    info: 'fa fa-info',
+    bars: 'fa fa-bars'
   },
   image: {
     sizeLimit: 512 * 1024,

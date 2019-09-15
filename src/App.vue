@@ -1,5 +1,5 @@
 <template lang="pug">
-  #app
+  #app.container
     c-header
     router-view
     c-footer
@@ -217,8 +217,8 @@ a {
 }
 
 main {
-  border: $border;
-  padding: 50px;
+  // border: $border;
+  // padding: 50px;
 }
 
 .error-msg {
