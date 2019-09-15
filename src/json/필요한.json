@@ -1,0 +1,104 @@
+[{
+  // 리스트 순서
+  "no": "1",
+  // 글 작성일자
+  "updated_at": "2018-09-04 19:59:12",
+  // 카테고리의 종류는 아래에 있음
+  "category_no": "2",
+  // 리스트 제목
+  "company_name": "아기 물품 이름",
+  // 내용 -> 글쓰기에서 에디터로 될 예정, 받을때는 text로 간단히 받을 수 있는가?
+  "contents": {
+    "summery": "아기 물품 소개",
+    "address": "서울시 서초구",
+    "phone": "010-1111-1123"
+  },
+  // 메뉴 관련 리스트
+  "menu": [
+    {
+      "title": "메뉴이름",
+      "content": "가격",
+      "mainimg": "main.png",
+      "imgs": [
+        "img1.png",
+        "img2.png",
+        "img3.png",
+        "img4.png"
+      ]
+    },
+    {
+      "title": "메뉴이름",
+      "content": "가격",
+      "mainimg": "main.png",
+      "imgs": [
+        "img1.png",
+        "img2.png",
+        "img3.png",
+        "img4.png"
+      ]
+    }
+  ],
+  // 아기 물품 평가
+  "replies": [
+    {
+      // 리플 넘버
+      "no": "269",
+      // 리플 내용
+      "contents": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget tristique sapien. Donec sit amet lacinia diam. Fusce imperdiet id lectus vitae mollis. Nullam iaculis sed mi sed ultrices. Morbi accumsan semper lorem, ut pretium ipsum sodales eget. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Vestibulum in faucibus orci. Vivamus eu sapien tincidunt, molestie sem in, suscipit leo. Cras a tortor imperdiet, semper est at, vulput",
+      // 리플 단 날짜
+      "updated_at": "2018-09-04 19:59:38",
+      // 리플 단 id
+      "user_no": "younghea",
+      // 리플단 사람의 이메일
+      "email": "younghea@naver.com",
+      // 1 ~ 3 까지 숫자가 높을 수록 좋은 것
+      "like": "1"
+    }
+  ]
+}]
+
+// user
+[{
+  // 글쓴이 id
+  "user_id": "seromkim1005",
+  // 글쓴이 이미지
+  "user_img": "img.png",
+  // 글쓴이 email
+  "email": "seromkim1005@naver.com",
+  // 글쓴이 password
+  "password": "12345",
+  // 리스트 넘버
+  "company": ["1", "12", "30"]
+}]
+
+// 카테고리 종류
+[
+  {
+    "no": "1",
+    "name": "옷"
+  },
+  {
+    "no": "2",
+    "name": "신발"
+  },
+  {
+    "no": "3",
+    "name": "장난감"
+  },
+  {
+    "no": "4",
+    "name": "가방"
+  },
+  {
+    "no": "5",
+    "name": "탈것"
+  },
+  {
+    "no": "6",
+    "name": "악세서리"
+  },
+  {
+    "no": "7",
+    "name": "특별한 옷"
+  }
+]

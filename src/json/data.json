@@ -1,0 +1,35 @@
+[{
+  "user-id": "string", // 등록 아이디
+  "no": 0, // 글 숫자 등록 숫자
+  "title": "string", // 물건에 대한 타이틀
+  "description": "string", // 소제목
+  "content": "string", // 물건 설명
+  "info": ["string"], // 물건에 대한 기본 정보
+  "review": {
+    "total": 0, // 리플 달린 총 숫자
+    "data": [{
+      "user_id": "string", // 리플 타이틀
+      "content": "string", // 리플 내용
+      "stars": 0, // 1~5까지 점수
+      "created_at": "string", // 리플 처음 등록 시간
+      "updated_at": "string", // 리플 수정 시간
+    }]
+  },
+  "like": 0, // 좋아요 숫자
+  "tags": ["string"], // 관련태그
+  "main_img": "url", // 메인 이미지 url
+  "category_no": 0, // 숫자로 0은 옷
+  "updated_at": "string", // 스트링으로 2019-02-07 10:22:05
+  "price": 0, // 금액
+  "content_item": [
+    {
+      "title": "string", // 아이템 타이틀
+      "content": "string", // 아이템 설명
+      "img-url": "string" // 아이템 이미지 url
+    }, {
+      "title": "string", // 아이템 타이틀
+      "content": "string", // 아이템 설명
+      "img-url": "string" // 아이템 이미지 url
+    }
+  ]
+}]

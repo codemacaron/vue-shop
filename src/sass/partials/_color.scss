@@ -1,0 +1,18 @@
+$color-point: #f37878;
+$color-point-light: lighten($color-point, 10%);
+$color-point-dark: darken($color-point, 10%);
+$color-regular: #222222;
+$color-light:lighten($color-regular, 15%);
+$color-dark:darken($color-regular, 15%);
+$color-lighter:lighten($color-regular, 30%);
+$color-darker:darken($color-regular, 30%);
+$color-light-half:lighten($color-regular, 50%);
+$color-darker-half:darken($color-regular, 50%);
+$color-white: #fff;
+$color-border: #dedfdf;
+$color-border-dark: darken($color-border, 50%);
+
+$border: 1px solid $color-border;
+$border-dark: 1px solid $color-border-dark;
+$border-point: 1px solid $color-point;
+$border-point-dark: 1px solid $color-point-dark;
