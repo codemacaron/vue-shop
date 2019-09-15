@@ -1,12 +1,16 @@
 <template lang="pug">
   #app
+    c-header
     router-view
+    c-footer
     button.btn-goto-top(type="button" @click="scrollToTop()") 위로가기
-    el-button Default
+    // el-button Default
 </template>
 
 <script>
-import { Button, Select } from 'element-ui'
+// import { Button, Select } from 'element-ui'
+import CHeader from './components/common/Header'
+import CFooter from './components/common/Footer'
 export default {
   name: 'App',
   methods: {
@@ -15,10 +19,7 @@ export default {
       window.scrollTo(0, 0)
     }
   },
-  component: {
-    'Button': Button,
-    'Select': Select
-  }
+  components: {CHeader, CFooter}
 }
 </script>
 
@@ -353,7 +354,7 @@ h2.join-title {
   }
   main {
     width: 1000px;
-    margin: 20px auto;
+    margin: 0 auto;
   }
 }
 
@@ -361,7 +362,7 @@ h2.join-title {
   main {
     box-sizing: border-box;
     width: 98%;
-    margin: 10px auto;
+    margin: 0 auto;
   }
 }
 </style>
