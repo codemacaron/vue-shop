@@ -1,0 +1,61 @@
+
+// el-input
+.input-search.el-input {
+  .el-input__inner {
+    height: 64px;
+    padding: 0;
+    border: 0;
+    border-bottom: 2px solid $color-point;
+    border-radius: 0;
+    font-size: 18px;
+    @include tablet {
+      height: 80px;
+    }
+    @include desktop {
+      height: 80px;
+    }
+    &::placeholder {
+      color: $color-lighter;
+    }
+  }
+}
+
+// el-dialog
+.search-bar {
+  .el-dialog {
+    width: 100%;
+    box-shadow: none;
+    @include tablet {
+      border-radius: 0;
+    }
+    @include desktop {
+      max-width: 1040px;
+    }
+    .el-dialog__header {
+      width: 100%;
+      height: 64px;
+      padding: 0;
+      border-bottom: 2px solid $color-point;
+      z-index: 999;
+      @include tablet {
+        height: 80px;
+      }
+      @include desktop {
+        height: 80px;
+      }
+    }
+    .el-dialog__body {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 0 16px;
+      @include tablet {
+        padding: 0 40px;
+      }
+      @include desktop {
+        padding: 0 24px;
+      }
+    }
+  }
+}

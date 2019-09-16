@@ -1,10 +1,10 @@
-$color-point: #f37878;
+$color-point: #23a852;
 $color-point-light: lighten($color-point, 10%);
 $color-point-dark: darken($color-point, 10%);
 $color-regular: #222222;
-$color-light:lighten($color-regular, 15%);
+$color-light:lighten($color-regular, 22%);
 $color-dark:darken($color-regular, 15%);
-$color-lighter:lighten($color-regular, 30%);
+$color-lighter:lighten($color-regular, 50%);
 $color-darker:darken($color-regular, 30%);
 $color-light-half:lighten($color-regular, 50%);
 $color-darker-half:darken($color-regular, 50%);
