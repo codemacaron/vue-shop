@@ -4,15 +4,12 @@
     template(v-if="width < 768")
       div.header-right
         c-nav(:screenWidth="width")
-        //- span.category 메뉴
-        //-   i.el-icon-menu.i-menu
         c-search(:screenWidth="width")
         i.el-icon-shopping-cart-2.i-cart
     template(v-else)
       c-nav(:screenWidth="width")
       div.header-right
         c-search
-
         i.el-icon-shopping-cart-2.i-cart
 </template>
 
@@ -70,12 +67,6 @@ export default {
       font-weight: 700;
       color: $color-point;
     }
-    // .nav {
-    //   margin-left: 40px;
-    //   @include mobile {
-    //     margin-left: 0;
-    //   }
-    // }
     .header-right {
       display: flex;
       align-content: flex-end;

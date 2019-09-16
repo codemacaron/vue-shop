@@ -9,27 +9,28 @@
         :title="'VShop'"
       )
         nav
-          ul.nav-container
-            li.nav-item
-              router-link(to="/my") 채소
-            li.nav-item 과일
-            li.nav-item 소스
+          c-nav-list(:handleClose="handleClose")
         el-button(plain) 로그아웃
     nav(v-else)
-      ul.nav-container
-        li.nav-item
-          router-link(to="/my") 채소
-        li.nav-item 과일
-        li.nav-item 소스
+      c-nav-list(:handleClose="handleClose")
 </template>
 
 <script>
+import CNavList from '../NavList'
 export default {
   name: 'CNav',
   props: ['screenWidth'],
+  components: {
+    CNavList
+  },
   data () {
     return {
       trigger: false
+    }
+  },
+  methods: {
+    handleClose () {
+      this.trigger = false
     }
   }
 }
