@@ -21,12 +21,12 @@
 </template>
 
 <script>
-import CPagination from "./../components/common/pagination";
+import CPagination from './../components/common/pagination'
 export default {
-  name: "List",
+  name: 'List',
   methods: {},
   components: { CPagination }
-};
+}
 </script>
 
 <style lang="scss" scoped>

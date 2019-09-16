@@ -14,9 +14,9 @@
 
 <script>
 export default {
-  name: "pagination",
+  name: 'pagination',
   methods: {}
-};
+}
 </script>
 
 <style lang="scss">
