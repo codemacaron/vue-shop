@@ -11,6 +11,7 @@
       div.header-right
         c-search
         i.el-icon-shopping-cart-2.i-cart
+        el-button(plain) 로그인
 </template>
 
 <script>
@@ -109,7 +110,4 @@ export default {
       }
     }
   }
-  // #app .el-input {
-  //   border: 1px solid red;
-  // }
 </style>
