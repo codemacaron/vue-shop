@@ -11,7 +11,7 @@
               strong 20%
           .info
             h1 [기획상품] One-Frozen 노르웨이 고등어
-            p.cost 
+            p.cost
               span.dc 2,500원
               span.emph →
               span.price 2,000원
