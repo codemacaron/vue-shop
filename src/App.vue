@@ -59,7 +59,7 @@ export default {
 #app {
   font-family: "Nanum Square", "Avenir", Helvetica, Arial, sans-serif;
   text-align: left;
-  color: #000;
+  color: $color-text;
 }
 button,
 a {
