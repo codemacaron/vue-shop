@@ -8,7 +8,7 @@
 import CList from '../../components/List'
 
 export default {
-  name: 'Fruits',
+  name: 'Sauces',
   components: {
     CList
   }

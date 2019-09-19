@@ -9,8 +9,8 @@
 
 <script>
 // import { Button, Select } from 'element-ui'
-import CHeader from './components/common/Header'
-import CFooter from './components/common/Footer'
+import CHeader from './components/common/header'
+import CFooter from './components/common/footer'
 export default {
   name: 'App',
   methods: {

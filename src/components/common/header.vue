@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import CNav from './Nav'
+import CNav from './nav'
 import CSearch from './Search'
 
 export default {

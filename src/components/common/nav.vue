@@ -4,9 +4,9 @@
       span.category(@click="trigger=true") 메뉴
         i.el-icon-menu.i-menu
       el-drawer(
-        :visible.sync="trigger"
-        :direction="'ttb'"
-        :title="'VShop'"
+        v-bind:visible.sync="trigger"
+        v-bind:direction="'ttb'"
+        v-bind:title="'VShop'"
       )
         nav
           c-nav-list(:handleClose="handleClose")

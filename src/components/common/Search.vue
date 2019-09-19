@@ -2,11 +2,11 @@
   div.search-content
     i.el-icon-search.i-search(@click="trigger=true")
     el-dialog.search-bar(
-      :visible.sync="trigger"
-      :fullscreen="screenWidth < 768 ? true : false"
-      :top="screenWidth < 768 ? '' : '0'"
-      :show-close="false"
-      :modal="false"
+      v-bind:visible.sync="trigger"
+      v-bind:fullscreen="screenWidth < 768 ? true : false"
+      v-bind:top="screenWidth < 768 ? '' : '0'"
+      v-bind:show-close="false"
+      v-bind:modal="false"
     )
       div.content-wrapper
         i.el-icon-close.i-close(@click="handleClose")
