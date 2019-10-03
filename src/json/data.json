@@ -1,35 +1,131 @@
-[{
-  "user-id": "string", // 등록 아이디
-  "no": 0, // 글 숫자 등록 숫자
-  "title": "string", // 물건에 대한 타이틀
-  "description": "string", // 소제목
-  "content": "string", // 물건 설명
-  "info": ["string"], // 물건에 대한 기본 정보
-  "review": {
-    "total": 0, // 리플 달린 총 숫자
-    "data": [{
-      "user_id": "string", // 리플 타이틀
-      "content": "string", // 리플 내용
-      "stars": 0, // 1~5까지 점수
-      "created_at": "string", // 리플 처음 등록 시간
-      "updated_at": "string", // 리플 수정 시간
-    }]
-  },
-  "like": 0, // 좋아요 숫자
-  "tags": ["string"], // 관련태그
-  "main_img": "url", // 메인 이미지 url
-  "category_no": 0, // 숫자로 0은 옷
-  "updated_at": "string", // 스트링으로 2019-02-07 10:22:05
-  "price": 0, // 금액
-  "content_item": [
-    {
-      "title": "string", // 아이템 타이틀
-      "content": "string", // 아이템 설명
-      "img-url": "string" // 아이템 이미지 url
-    }, {
-      "title": "string", // 아이템 타이틀
-      "content": "string", // 아이템 설명
-      "img-url": "string" // 아이템 이미지 url
+{
+  // user
+  "user": [{
+    "자동고유번호 아이디": {
+      "user_id": "string", // 등록 아이디
+      "email": "string", // 이메일
+      "password": "string", // 패스워드
+      "name": "string", // 이름
+      "created_at": "string", // 작성일
+      "last_login": "string", // 마지막 로그인 -> 추후 쿠폰
+      "left_at": "string" ||  null, // 탈퇴일
+      "my_review": [{
+        "item_no": 0, // 상품 번호
+        "title": "string", // 리뷰 타이틀
+        "content": "string", // 리뷰 글
+        "img": ["string"], // 이미지 리스트
+        "stars": 0 || null, // 1 - 10
+        "created_at": "string", // 작성일
+        "updated_at": "string", // 수정일
+      }],
+      // 카트
+      "cart": {
+        // 카트에 담긴 쇼핑 리스트
+        "items": [
+          {
+            "order_no": "string", // 주문번호
+            "info": {
+              "item_no": "string", // 상품 번호
+              "title": "string", // 타이틀,
+              "count": 0, // 해당상품 갯수
+              "price": {
+                "original_price": 0, // 금액
+                "sale_status": "boolean", // 세일 유무
+                "sale": {
+                  "percent": 0, // 할인된 퍼센트
+                  "sale_price": 0 // 할인된 가격
+                }
+              }
+            }
+          }
+        ],
+        // 카트에 담긴 물건의 금액에 따라 부과 되는 것,
+        "delivery_fee": "boolean" // true가 기본 true면 3000원 추가, false 3000원 미추가
+      },
+      // 이미 구매한 물품 리스트
+      "shop_list": [{
+        "order_no": "string", // 주문번호
+        "items": [{
+          "item_no": 0, // 상품번호
+          "title": "string", // 상품명
+          "count": 0, // 갯수
+          "price": {
+            "original_price": 0, // 금액
+            "sale_status": "boolean", // 세일 유무
+            "sale": {
+              "percent": 0, // 할인된 퍼센트
+              "sale_price": 0 // 할인된 가격
+            }
+          }
+        }],
+        "deliver": {
+          "status": 0, // 0 -> 배송예정 1-> 배송중 2-> 배송완료 3 -> 배송보류 4 -> 배송취소
+          "will": {
+            "date": "string", // 날짜 
+            "msg": "string" || null // 메세지
+          },
+          "doing": {
+            "date": "string", // 날짜 
+            "msg": "string" || null // 메세지
+          },
+          "done": {
+            "date": "string", // 날짜 
+            "msg": "string" || null // 메세지
+          },
+          "pending": { 
+            "date": "string", // 날짜 
+            "msg": "string" || null // 메세지
+          },
+          "cancel": { 
+            "date": "string", // 날짜 
+            "msg": "string" || null // 메세지
+          } 
+        }
+      }]
     }
-  ]
-}]
+  }],
+  // 물품
+  "items": [{
+    "자동고유번호 아이디": {
+      "item_no": "string", // 상품 번호
+      "title": "string", // 물건에 대한 타이틀
+      "description": "string", // 소제목
+      "content": "string", // 물건 설명
+      "info": ["string"], // 물건에 대한 기본 정보
+      "review": {
+        "total": 0, // 리플 달린 총 숫자
+        "total_stars": 0, // 1~10까지의 숫자
+        "data": [{
+          "user_id": "string", // 리플 타이틀
+          "content": "string", // 리플 내용
+          "stars": 0, // 1~10까지 점수
+          "created_at": "string", // 리플 처음 등록 시간
+          "updated_at": "string", // 리플 수정 시간
+          "imgs": ["string"] // 이미지
+        }]
+      },
+      "like": 0, // 좋아요 숫자
+      "tags": ["string"], // 관련태그
+      "img": "url", // 메인 이미지 url
+      "category": "string", // 스트링으로
+      "updated_at": "string", // 스트링으로 2019-02-07 10:22:05
+      "price": {
+        "original_price": 0, // 금액
+        "sale_status": "boolean", // 세일 유무
+        "sale": {
+          "percent": 0, // 할인된 퍼센트
+          "sale_price": 0 // 할인된 가격
+        }
+      },
+      "stock": 0, // 재고
+      "md": "boolean", // 추천상품
+      "content_item": [
+        {
+          "title": "string", // 아이템 타이틀
+          "content": "string", // 아이템 설명
+          "img": "string" // 아이템 이미지 url
+        }
+      ]
+    }
+  }]
+}
